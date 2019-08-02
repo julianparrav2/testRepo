@@ -16,7 +16,16 @@ public class Juego {
     
     public static void main(string[]args){
         
-        System.out.println("dame un numero de 1 al 20");
+        int numero;
+        int numeroALetorio;
+        Scanner teclado = new Random();
+        
+    }
+        
+    
+            
+       
+    {  System.out.println("dame un numero de 1 al 20");
         Scanner teclado = new Scanner(System.in);
         int numero = Integer.parseInt(teclado.nextLine());
         
@@ -24,13 +33,23 @@ public class Juego {
         int numeroAletorio = r.nextInt(20)+1;
         
         if(numero == numeroAletorio){
+            System.out.println("GANASTE con el " +numero);
             
+        }else {
+            System.out.println("PAilas el numero correcto era "+ numeroAletorio);
+            
+      }while (numero !=numeroAletorio);
+      
+      System.out.println("Gnaste despues de " +contador+ "intentos");
+
+        
+
         
                 
     
         
     
-    }
+    
         
      
                 
